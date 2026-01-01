@@ -26,8 +26,8 @@
 #### 1. استنساخ المشروع
 
 ```bash
-git clone https://github.com/Ayoubvvch/vedic-math-app.git
-cd vedic-math-app
+git clone https://github.com/Ayoubvvch/webtoapp-builder.git
+cd webtoapp-builder
 ```
 
 #### 2. إضافة محتوى HTML
