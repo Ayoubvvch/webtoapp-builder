@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>احصل على APK - تطبيق الرياضيات الفيدية</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #4338ca 0%, #6366f1 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        .content {
+            padding: 40px;
+        }
+        .step {
+            background: #f8fafc;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-right: 5px solid #6366f1;
+            transition: transform 0.3s ease;
+        }
+        .step:hover {
+            transform: translateX(10px);
+        }
+        .step-number {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: #6366f1;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            font-weight: bold;
+            margin-left: 15px;
+        }
+        .step h3 {
+            display: inline;
+            color: #1e293b;
+            font-size: 1.3em;
+        }
+        .step p {
+            margin-top: 15px;
+            color: #64748b;
+            line-height: 1.8;
+        }
+        .code-block {
+            background: #1e293b;
+            color: #e2e8f0;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 15px;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+            font-size: 0.95em;
+        }
+        .highlight {
+            background: #fef3c7;
+            padding: 3px 8px;
+            border-radius: 5px;
+            font-weight: bold;
+            color: #92400e;
+        }
+        .link-btn {
+            display: inline-block;
+            background: #6366f1;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: all 0.3s ease;
+        }
+        .link-btn:hover {
+            background: #4338ca;
+            transform: scale(1.05);
+        }
+        .success-box {
+            background: #dcfce7;
+            border: 2px solid #22c55e;
+            border-radius: 15px;
+            padding: 25px;
+            margin-top: 30px;
+        }
+        .success-box h4 {
+            color: #166534;
+            font-size: 1.3em;
+            margin-bottom: 10px;
+        }
+        .warning-box {
+            background: #fef9c3;
+            border: 2px solid #eab308;
+            border-radius: 15px;
+            padding: 25px;
+            margin-top: 20px;
+        }
+        .warning-box h4 {
+            color: #854d0e;
+            margin-bottom: 10px;
+        }
+        .footer {
+            background: #f1f5f9;
+            padding: 30px;
+            text-align: center;
+            border-top: 1px solid #e2e8f0;
+        }
+        .emoji {
+            font-size: 1.5em;
+            margin-left: 10px;
+        }
+        ul {
+            margin-right: 20px;
+            margin-top: 10px;
+        }
+        li {
+            margin-bottom: 8px;
+            color: #64748b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 احصل على APK الآن!</h1>
+            <p>تطبيق الرياضيات الفيدية - Android App</p>
+        </div>
+        
+        <div class="content">
+            <div class="warning-box">
+                <h4>⚠️ معلومة مهمة</h4>
+                <p>البيئة الحالية لا تحتوي على أدوات Android، لذلك سنستخدم <span class="highlight">GitHub Actions</span> لبناء APK مجاناً على السحابة!</p>
+            </div>
+
+            <div class="step">
+                <span class="step-number">1</span>
+                <h3>إنشاء مستودع على GitHub</h3>
+                <p>اذهب إلى الرابط التالي وأنشئ مستودعاً جديداً:</p>
+                <a href="https://github.com/new" target="_blank" class="link-btn">🌐 إنشاء مستودع جديد</a>
+                <ul>
+                    <li><strong>Repository name:</strong> <span class="highlight">vedic-math-app</span></li>
+                    <li><strong>Visibility:</strong> Public (عامة)</li>
+                    <li>✅ لا تضف README/.gitignore/license الآن</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <span class="step-number">2</span>
+                <h3>رفع الملفات</h3>
+                <p>نفذ الأوامر التالية في الطرفية (Terminal):</p>
+                <div class="code-block">
+cd /workspace/vedic_math_app
+<br>
+git init
+<br>
+git add .
+<br>
+git commit -m "مشروع الرياضيات الفيدية - تطبيق Android"
+<br>
+git remote add origin https://github.com/<span style="color:#fbbf24;">YOUR_USERNAME</span>/vedic-math-app.git
+<br>
+git push -u origin main
+                </div>
+                <p style="margin-top: 15px;">⚠️ استبدل <span class="highlight">YOUR_USERNAME</span> باسم المستخدم الخاص بك!</p>
+            </div>
+
+            <div class="step">
+                <span class="step-number">3</span>
+                <h3>تشغيل البناء</h3>
+                <p>بعد رفع الملفات بنجاح:</p>
+                <ol style="margin-right: 20px; margin-top: 15px; color: #64748b;">
+                    <li>اذهب إلى مستودعك على GitHub</li>
+                    <li>انقر على تبويب <span class="highlight">Actions</span></li>
+                    <li>ابحث عن "بناء تطبيق الرياضيات الفيدية"</li>
+                    <li>انقر على <span class="highlight">Run workflow</span></li>
+                    <li>اختر <span class="highlight">main</span> وانقر <span class="highlight">Run workflow</span></li>
+                </ol>
+            </div>
+
+            <div class="step">
+                <span class="step-number">4</span>
+                <h3>تحميل APK</h3>
+                <p>انتظر 2-5 دقائق حتى ينتهي البناء، ثم:</p>
+                <ol style="margin-right: 20px; margin-top: 15px; color: #64748b;">
+                    <li>في تبويب <span class="highlight">Actions</span></li>
+                    <li>انقر على اسم workflow الذي تم تشغيله</li>
+                    <li>في أسفل الصفحة، ستجد <span class="highlight">Artifacts</span></li>
+                    <li>انقر على <span class="highlight">vedic-math-app.apk</span></li>
+                    <li>✅ تم تحميل APK!</li>
+                </ol>
+            </div>
+
+            <div class="success-box">
+                <h4>✅ بعد التحميل</h4>
+                <ol style="margin-right: 20px; margin-top: 10px; color: #166534;">
+                    <li>نقل APK إلى هاتفك Android</li>
+                    <li>تفعيل "تثبيت من مصادر غير معروفة" في الإعدادات</li>
+                    <li>اضغط على APK للتثبيت</li>
+                    <li>استمتع بالتطبيق!</li>
+                </ol>
+            </div>
+
+            <div class="step" style="margin-top: 30px;">
+                <span class="step-number">📁</span>
+                <h3>ملفات المشروع</h3>
+                <p>المشروع موجود في: <span class="highlight">/workspace/vedic_math_app</span></p>
+                <p style="margin-top: 10px;">جميع الملفات جاهزة للرفع إلى GitHub!</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>🎉 <strong>مجاناً 100%</strong> - لا تحتاج بطاقة ائتمان!</p>
+            <p style="margin-top: 10px; color: #64748b;">الوقت المتوقع للحصول على APK: 5-10 دقائق</p>
+        </div>
+    </div>
+</body>
+</html>
