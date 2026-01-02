@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.webtoapp.builder"
+    namespace = "com.system22.protocol"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.webtoapp.builder"
+        applicationId = "com.system22.protocol"
         minSdk = 24
         targetSdk = 34
         versionCode = 1

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- اسم التطبيق العام -->
-    <string name="app_name">WebToApp Builder</string>
+    <string name="app_name">System 22</string>
 
     <!-- رسائل التحميل -->
     <string name="loading">جاري تحميل التطبيق...</string>
